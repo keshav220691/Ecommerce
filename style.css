@@ -343,11 +343,15 @@ img{
 }
 
 @media (max-width: 768px) {
+    #frame-3 , #frame-2{
+        flex-wrap: wrap;
+    }
     .image-frame-2 img, .image-frame-3 img {
         width: 100%; /* Image takes full width on small screens */
     }
 
     .content-frame-3, .content-frame-2 {
+        flex-direction: column;
         width: 100%; /* Content takes full width on small screens */
         padding: 1rem; /* Adjust padding for smaller screens */
     }
