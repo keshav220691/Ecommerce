@@ -360,10 +360,12 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    
 }
 .handle{
     background-color: #ffa3b1;
     border-radius: 10px;
+    cursor: pointer;
 }
 .handle:hover{
     border-radius: 50%;
