@@ -81,6 +81,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color: #fef4f3;
+    overflow: hidden;
 }
 .image-frame-2 img , .image-frame-3 img
 {
