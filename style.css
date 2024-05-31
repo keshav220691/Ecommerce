@@ -85,6 +85,8 @@ header{
 .image-frame-2 img , .image-frame-3 img
 {
     width: 40vw;
+    max-width: 100%;
+    height: auto;
 }
 
 .content-frame-3 , .content-frame-2
@@ -330,3 +332,41 @@ img{
 }
 
 /* responsive ness  */
+@media (max-width: 1024px) {
+    .image-frame-2 img, .image-frame-3 img {
+        width: 50vw; /* Adjust image width on medium screens */
+    }
+
+    .content-frame-3, .content-frame-2 {
+        width: 50vw; /* Adjust content width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-frame-2 img, .image-frame-3 img {
+        width: 100%; /* Image takes full width on small screens */
+    }
+
+    .content-frame-3, .content-frame-2 {
+        width: 100%; /* Content takes full width on small screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .p1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .p2, .p3 {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .scale {
+        width: 10vw; /* Adjust size of the scales */
+        height: 10vw;
+        font-size: 2vw; /* Adjust font size */
+    }
+
+    .mrp-price, .our-price {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+}
