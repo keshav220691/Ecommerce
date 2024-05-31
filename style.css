@@ -93,7 +93,6 @@ header{
     width: 60vw;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
 }
@@ -109,7 +108,8 @@ header{
     font-weight: 500;
 }
 .p3{
-    font-size: 1.5rem;margin-bottom: 2vh;
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .p4{
@@ -328,4 +328,27 @@ footer {
 
 img{
     object-fit: cover;
+}
+
+@media (max-width : 600px) {
+    #frame-2 ,#frame-3{
+        height: auto;
+        flex-direction: cloumn;
+        flex-wrap: wrap;
+        background-color: #fef4f3;
+        overflow: hidden;
+    }
+    .image-frame-2 img , .image-frame-3 img
+    {
+        width: 100vw;
+    }
+    
+    .content-frame-3 , .content-frame-2
+    {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
 }
