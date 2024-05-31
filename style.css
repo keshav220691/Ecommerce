@@ -339,6 +339,7 @@ img{
 
     .content-frame-3, .content-frame-2 {
         width: 50vw; /* Adjust content width on medium screens */
+        overflow: hidden;
     }
 }
 
