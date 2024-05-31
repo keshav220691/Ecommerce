@@ -429,7 +429,6 @@ footer {
 @media (max-width: 600px) {
   .frame {
     width: 100%;
-    padding: 20px;
   }
   img {
     object-fit: cover;
@@ -463,8 +462,9 @@ footer {
     align-items: center;
   }
   .fest-content {
+    display: flex;
+    flex-wrap: wrap;
     width: 100vw;
-    font-size: larger;
     text-align: center;
     color: #858080;
     margin-bottom: 5vh;
