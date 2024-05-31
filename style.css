@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 /* logo image  */
 
@@ -37,6 +36,7 @@ header{
     flex-direction: column;
     gap: 1.2rem;
     align-items: center;
+    padding: 2vh;
 }
 
 .title1{
@@ -66,26 +66,33 @@ header{
 }
 
 #frame1{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.1rem;
-    padding: 1rem;
+    gap: 1rem;
+
     background: linear-gradient(to bottom, #ffdbd8 70%, white 50%);
-    margin-bottom: 2rem;
 }
 /* frame 2 */
 
 #frame-2 ,#frame-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
     background-color: #fef4f3;
+}
+.image-frame-2 img , .image-frame-3 img
+{
+    width: 40vw;
 }
 
 .content-frame-3 , .content-frame-2
 {
+    width: 60vw;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
 }
@@ -96,33 +103,34 @@ header{
 }
 
 .p2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #cdd5e7;
     font-weight: 500;
 }
 .p3{
-    font-size: 2rem;
+    font-size: 1.5rem;margin-bottom: 2vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .p4{
     color: #a6bdd9;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .size-scale{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .scale{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
     border: 3px solid #ff91a8;
     color: #ff91a8;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 .mrp-price{
@@ -144,13 +152,16 @@ header{
     padding: 2rem;
 }
 .fest-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #ff3332;
 }
 .fest-content{
-    font-size: large;
-    font-weight: 700;
+    width: 60vw;
+    font-size: larger;
+    text-align: center;
+    color: #858080;
+    margin-bottom: 5vh;
 }
 
 /* frame 5 article */
@@ -162,6 +173,7 @@ header{
 }
 .article-heading{
     color: #ff3332;
+    text-transform: capitalize;
     font-size: 3rem;
 }
 .articles{
@@ -247,6 +259,7 @@ header{
 
 /* image galllery / */
 #frame-7{
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -254,10 +267,10 @@ header{
 }
 
 .frame-6-image{
-    border-radius: 20px;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 /* footer  */
@@ -296,7 +309,7 @@ footer {
     height: fit-content;
     border: 2px solid #ff99ad;
     border-radius: 10px;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 2rem ;
     color: #ff99ad;
     font-weight: 700
 }
@@ -308,3 +321,9 @@ footer {
     justify-content: center;
 }
 
+.frame{
+    width: 100vw;
+}
+
+
+/* responsive ness  */
