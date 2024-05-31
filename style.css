@@ -85,8 +85,6 @@ header{
 .image-frame-2 img , .image-frame-3 img
 {
     width: 40vw;
-    max-width: 100%;
-    height: auto;
 }
 
 .content-frame-3 , .content-frame-2
