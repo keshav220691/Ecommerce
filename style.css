@@ -124,6 +124,8 @@ header {
   height: 80vh;
   object-fit: cover;
 }
+
+
 /* frame 2 */
 
 #frame-2,
@@ -427,6 +429,15 @@ footer {
 }
 
 @media (max-width: 600px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        padding: 0%;
+        margin: 0%;
+        object-fit: cover;
+    }
   .frame {
     width: 100%;
   }
@@ -455,6 +466,32 @@ footer {
     padding: 2vw;
     font-size: 2vw;
   }
+  .p1 {
+    font-size: 3rem;
+  }
+  
+  .p2 {
+    font-size: 1.5rem;
+    color: #cdd5e7;
+    font-weight: 600;
+    margin-bottom: 4vh;
+  }
+  .p3 {
+    font-size: 2rem;
+  }
+  .p4 {
+    font-size: 2rem;
+  }
+  
+  .scale {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #ff91a8;
+    color: #ff91a8;
+    font-size: 2rem;
+  }
+  
   .fest-title {
     font-size: 2rem;
     font-weight: 500;
@@ -468,5 +505,11 @@ footer {
     text-align: center;
     color: #858080;
     margin-bottom: 5vh;
+  }
+  .button {
+    width: fit-content;
+    height: fit-content;   
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }
