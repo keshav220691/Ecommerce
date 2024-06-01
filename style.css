@@ -200,7 +200,7 @@ header {
 
 .mrp-price {
   color: #858080;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   text-decoration: line-through;
 }
 
@@ -515,7 +515,17 @@ footer {
     font-size: 20px;
     padding: 10px 20px;
   }
+  .frame-8-title{
+    font-size: 1rem;
+  }
   .frame-8-content{
     font-size: 1rem;
+  }
+  footer{
+    width: 100vh;
+    padding: 1rem;
+  }
+  .handles{
+    flex-wrap: wrap;
   }
 }
